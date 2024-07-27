@@ -22614,6 +22614,7 @@
 
           let maskPattern = -1;
           if (hints !== null && undefined !== hints.get(EncodeHintType$1.QR_MASK_PATTERN)) {
+            console.log([hints.get(EncodeHintType$1.QR_MASK_PATTERN)]);
             maskPattern = Number.parseInt(hints.get(EncodeHintType$1.QR_MASK_PATTERN).toString(), 10);
           } else {
             maskPattern = this.chooseMaskPattern(finalBits, ecLevel, version, matrix);
